@@ -70,6 +70,6 @@ plt.legend(["2020-02-28", "2020-02-27", "2020-02-29", "2020-03-01", "2020-03-02"
             "2020-03-05", "2020-03-06"], loc='lower left', prop={'size': 6})
 plt.xlabel("Time of Day")
 plt.ylabel("Resistance")
+plt.title("Time of Day vs. Resistance")
 
-plt.savefig("dayvsrez.png")
-plt.show()
+plt.savefig("timeofdayvsrez.png")
