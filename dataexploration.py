@@ -71,5 +71,44 @@ plt.legend(["2020-02-28", "2020-02-27", "2020-02-29", "2020-03-01", "2020-03-02"
 plt.xlabel("Time of Day")
 plt.ylabel("Resistance")
 plt.title("Time of Day vs. Resistance")
-
 plt.savefig("timeofdayvsrez.png")
+
+
+# Plot Temperature vs. Resistance for different days
+
+ay = df_date1.plot(x="Temperature", y="Resistance")
+df_date2.plot(ax=ay, x="Temperature", y="Resistance")
+df_date3.plot(ax=ay, x="Temperature", y="Resistance")
+df_date4.plot(ax=ay, x="Temperature", y="Resistance")
+df_date5.plot(ax=ay, x="Temperature", y="Resistance")
+df_date6.plot(ax=ay, x="Temperature", y="Resistance")
+df_date7.plot(ax=ay, x="Temperature", y="Resistance")
+df_date8.plot(ax=ay, x="Temperature", y="Resistance")
+df_date9.plot(ax=ay, x="Temperature", y="Resistance")
+
+plt.legend(["2020-02-27", "2020-02-28", "2020-02-29", "2020-03-01", "2020-03-02", "2020-03-03", "2020-03-04",
+            "2020-03-05", "2020-03-06"], loc='lower right', prop={'size': 6})
+plt.xlabel("Temperature")
+plt.ylabel("Resistance")
+plt.title("Temperature vs. Resistance")
+plt.savefig("tempvsrez.png")
+
+
+# Plot Humidity vs. Resistance for different days
+
+ay = df_date1.plot(x="Humidity", y="Resistance")
+df_date2.plot(ax=ay, x="Humidity", y="Resistance")
+df_date3.plot(ax=ay, x="Humidity", y="Resistance")
+df_date4.plot(ax=ay, x="Humidity", y="Resistance")
+df_date5.plot(ax=ay, x="Humidity", y="Resistance")
+df_date6.plot(ax=ay, x="Humidity", y="Resistance")
+df_date7.plot(ax=ay, x="Humidity", y="Resistance")
+df_date8.plot(ax=ay, x="Humidity", y="Resistance")
+df_date9.plot(ax=ay, x="Humidity", y="Resistance")
+
+plt.legend(["2020-02-27", "2020-02-28", "2020-02-29", "2020-03-01", "2020-03-02", "2020-03-03", "2020-03-04",
+            "2020-03-05", "2020-03-06"], loc='lower right', prop={'size': 6})
+plt.xlabel("Humidity")
+plt.ylabel("Resistance")
+plt.title("Humidity vs. Resistance")
+plt.savefig("humvsrez.png")
